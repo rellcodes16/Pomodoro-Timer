@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useColor } from './ColorContext';
 import { useTimer } from './TimerContext';
 

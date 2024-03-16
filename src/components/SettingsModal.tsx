@@ -1,7 +1,6 @@
-import Modal from "./Modal"
-import { HiOutlineCog8Tooth } from "react-icons/hi2"
-import Settings from "./Settings"
-import { useTimer } from "./TimerContext";
+import Modal from "./Modal";
+import { HiOutlineCog8Tooth } from "react-icons/hi2";
+import Settings from "./Settings";
 
 type SettingsModalProps = {
     workTime: number;

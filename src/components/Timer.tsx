@@ -12,7 +12,7 @@ type TimerProps = {
 
 const Timer = ({ initialSeconds } : TimerProps) => {
   
-  const { workTimeInput, shortBreakInput, longBreakInput, workTime, longBreak, shortBreak } = useTimer()
+  const { workTime, longBreak, shortBreak } = useTimer()
 
   const [seconds, setSeconds] = useState(workTime);
   const [isRunning, setIsRunning] = useState(false);

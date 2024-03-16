@@ -6,14 +6,10 @@ import { useFont } from './components/FontContext';
 import { useTimer } from './components/TimerContext';
 
 function App() {
-  const { shortBreak, longBreak, workTime, setDisplayTime, displayTime, setWorkTime } = useTimer()
+  const { shortBreak, longBreak, workTime, setDisplayTime, displayTime } = useTimer()
 
   const { activeFont } = useFont();
   console.log(displayTime)
-
-  const handleWorkTimeChange = (newValue: number) => {
-    setWorkTime(newValue * 60); // Convert minutes to seconds
-  };
 
   const handleShortBreak = () => {
     setDisplayTime(shortBreak)

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { FaCircle, FaCheckCircle } from 'react-icons/fa';
 import { useColor } from './ColorContext';
 import { useFont } from './FontContext';
@@ -6,8 +6,6 @@ import { useTimer } from './TimerContext';
 
 
 function Settings() {
-  // const {setWorkTime, setShortBreak, setWorkTimeInput, setShortBreakInput, setLongBreak, setLongBreakInput, shortBreakInput, longBreakInput, workTimeInput } = useTimer()
-
   const {
     setWorkTime,
     setShortBreak,
