@@ -1,4 +1,4 @@
-import { cloneElement, createContext, useContext, useState, ReactNode } from "react";
+import React, { cloneElement, createContext, useContext, useState, ReactNode, MutableRefObject } from "react";
 import { createPortal } from "react-dom";
 import { HiXMark } from "react-icons/hi2";
 import { useOutsideClick } from "./useOutsideClick";
@@ -50,7 +50,7 @@ type WindowProps = {
 
 function Window({ children, name }: WindowProps) {
     const { openModal, close } = useContext(ModalContext);
-    const { ref } = useOutsideClick(close);
+    const { ref } = useOutsideClick(close) as { ref: MutableRefObject<HTMLDivElement | null> }; // Asserting the correct type for the ref
 
     if (name !== openModal) return null;
 

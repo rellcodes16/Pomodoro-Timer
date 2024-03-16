@@ -7,7 +7,6 @@ import { useTimer } from './TimerContext';
 
 type TimerProps = {
     initialSeconds: number;
-    pathColor: string;
 }
 
 const Timer = ({ initialSeconds } : TimerProps) => {
